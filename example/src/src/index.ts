@@ -1,5 +1,3 @@
-import DevTool from './components/DevTool';
+import { DevTool } from './DevTool';
 
-export {
-  DevTool,
-};
+export { DevTool };

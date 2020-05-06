@@ -1,9 +1,9 @@
 import DevToolStorage from './DevToolStorage';
 import * as React from 'react';
-import { COLORS } from '../constants';
-import saveSetting from '../logic/saveSetting';
+import { COLORS } from './constants';
+import saveSetting from './logic/saveSetting';
 import { useState } from 'react';
-import search from '../logic/filterObject';
+import search from './logic/filterObject';
 const clone = require('lodash.clonedeep');
 let ReactJson = (props: any) => <div {...props} />;
 if (typeof window !== 'undefined' && typeof document !== 'undefined') {

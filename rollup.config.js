@@ -1,19 +1,24 @@
+import externalDeps from 'rollup-plugin-peer-deps-external';
 import typescript from 'rollup-plugin-typescript2';
 
-export default {
-  input: 'src/index.ts',
-  plugins: [
-    typescript(),
-  ],
-  external: ['react', 'react-simple-animate', 'react-json-view'],
-  output: [
-    {
+const external = [
+  'react',
+  'little-state-machine',
+  'react-json-view',
+  'react-simple-animate',
+];
+
+export default [
+  {
+    input: './src/index.ts',
+    output: {
+      name: 'LittleStateMachine',
       file: 'dist/index.js',
-      format: 'cjs',
-    },
-    {
-      file: 'dist/index.es.js',
       format: 'es',
+      sourcemap: true,
     },
-  ],
-};
+    external,
+    plugins: [typescript(), externalDeps()],
+  },
+];
+

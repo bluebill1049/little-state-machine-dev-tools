@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { COLORS, Z_INDEX } from '../constants';
+import { COLORS, Z_INDEX } from './constants';
 
 export default function DevToolStorage({ setLoadPanel, isBrowser }: any) {
   return (

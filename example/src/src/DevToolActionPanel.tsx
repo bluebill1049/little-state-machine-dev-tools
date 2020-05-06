@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
-import { COLORS } from '../constants';
-import saveSetting from '../logic/saveSetting';
+import { COLORS } from './constants';
+import saveSetting from './logic/saveSetting';
 
 const DevToolActionPanel = ({
   setStateIndex,

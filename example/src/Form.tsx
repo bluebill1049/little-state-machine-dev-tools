@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { updateFirstLastName } from './actions/yourDetails';
 import useForm from 'react-hook-form';
-import { useStateMachine } from './src';
+import { useStateMachine } from 'little-state-machine';
 
 const Form: React.FC = () => {
   const { handleSubmit, register } = useForm();

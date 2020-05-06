@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { useStateMachine } from '../stateMachine';
+import { useStateMachine } from 'little-state-machine';
 import DevToolActionPanel from './DevToolActionPanel';
 import DevToolStateTree from './DevToolStateTree';
 import { Animate } from 'react-simple-animate';
-import { STATE_MACHINE_DEV_TOOL_CONFIG, COLORS, Z_INDEX } from '../constants';
-import saveSetting from '../logic/saveSetting';
+import { STATE_MACHINE_DEV_TOOL_CONFIG, COLORS, Z_INDEX } from './constants';
+import saveSetting from './logic/saveSetting';
 import { useRef } from 'react';
 const cloneDeep = require('lodash.clonedeep');
 
@@ -32,7 +32,7 @@ let previousMouseMoveDiff = config.mouseMoveDiff;
 let previousIsCollapse = config.isCollapse;
 let previousIsClose = config.isClose;
 
-const DevTool = ({
+export const DevTool = ({
   buttonBottom,
   buttonTop,
   iconSize,
@@ -204,5 +204,3 @@ const DevTool = ({
     </div>
   );
 };
-
-export default DevTool;

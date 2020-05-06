@@ -2,15 +2,14 @@ import React from 'react';
 import './App.css';
 import Form from './Form';
 import yourDetails from './states/yourDetails';
-import { StateMachineProvider, createStore, DevTool } from './src';
+import { StateMachineProvider, createStore } from 'little-state-machine';
+import { DevTool } from './src';
 const merge = require('deepmerge');
 
 window.sessionStorage.setItem(
   'test',
   '{"yourDetails": {"firstname": "hello", "addresses": [{"street": "streetC","suburb": "suburbC","state": "stateC"}]}}',
 );
-
-const mergeStore = (sessionData: any, data: any) => merge(data, sessionData);
 
 createStore(
   {

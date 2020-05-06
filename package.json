@@ -3,7 +3,6 @@
   "sideEffects": false,
   "version": "1.0.0",
   "main": "./index.js",
-  "module": "dist/index.es.js",
   "scripts": {
     "clean": "rimraf dist/*",
     "build": "rollup -c",
@@ -37,6 +36,7 @@
     "react-test-renderer": "^16.8.3",
     "rimraf": "^2.6.3",
     "rollup": "^1.6.0",
+    "rollup-plugin-peer-deps-external": "^2.2.2",
     "rollup-plugin-typescript2": "^0.19.2",
     "ts-jest": "^24.0.0",
     "typescript": "^3.3.3333",

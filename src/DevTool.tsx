@@ -32,7 +32,7 @@ let previousMouseMoveDiff = config.mouseMoveDiff;
 let previousIsCollapse = config.isCollapse;
 let previousIsClose = config.isClose;
 
-const DevTool = ({
+export const DevTool = ({
   buttonBottom,
   buttonTop,
   iconSize,
@@ -204,5 +204,3 @@ const DevTool = ({
     </div>
   );
 };
-
-export default DevTool;

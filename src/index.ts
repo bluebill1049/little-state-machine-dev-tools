@@ -1,1 +1,3 @@
-export * from './DevTool';
+import { DevTool } from './DevTool';
+
+export { DevTool };
