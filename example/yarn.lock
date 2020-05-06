@@ -5887,10 +5887,10 @@ little-state-machine-devtools@1.0.0-beta.3:
     react-json-view "^1.19.1"
     react-simple-animate "^3.3.0"
 
-little-state-machine@3.0.0-beta.2:
-  version "3.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/little-state-machine/-/little-state-machine-3.0.0-beta.2.tgz#14d1d3f5724ae631e4f834430acf4300070ae18d"
-  integrity sha512-i0D0gZ2wQqh54ZTM31nnxxArBuNam50DFkdzI49gI6rr5N5b4+vudLA7YkmfZMDpu7YbyG9R4piVOk57dlZ2fQ==
+little-state-machine@3.0.0-beta.4:
+  version "3.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/little-state-machine/-/little-state-machine-3.0.0-beta.4.tgz#354b873a8939c0be1c611a30632767e7e424745a"
+  integrity sha512-N7na+GC2j53tL3GpKvDqdu8VBL0U40Fgk/owsNtZeEWdHkx+NOhvAwOG8c0RQik6jMNWuYZuLYiKYVGNYqwZtA==
 
 load-json-file@^2.0.0:
   version "2.0.0"

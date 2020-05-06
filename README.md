@@ -19,7 +19,6 @@ State management made super simple
 Check out the <a href="https://codesandbox.io/s/lrz5wloklm">Demo</a>.
 <br />
   
-Built-in DevTool component to track your state change and action.
 ```jsx
 import { DevTool } from 'little-state-machine-devtools'
 
