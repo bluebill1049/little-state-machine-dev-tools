@@ -3,8 +3,7 @@ import './App.css';
 import Form from './Form';
 import yourDetails from './states/yourDetails';
 import { StateMachineProvider, createStore } from 'little-state-machine';
-import { DevTool } from './src';
-const merge = require('deepmerge');
+import { DevTool } from 'little-state-machine-devtools';
 
 window.sessionStorage.setItem(
   'test',
