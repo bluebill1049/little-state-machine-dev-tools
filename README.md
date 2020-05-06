@@ -1,5 +1,5 @@
 <div align="center"><a href="https://lrz5wloklm.csb.app/"><img src="https://github.com/bluebill1049/little-state-machine/blob/master/docs/logo.png?raw=true" alt="Little State Machine - React Hooks for state management" width="140px" /></a>
-    <h1>♆ Little State Machine Devtools</h2>
+    <h1>Little State Machine Devtools</h1>
     
 State management made super simple
 </div>
