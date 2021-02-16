@@ -69,7 +69,7 @@ export const DevTool = ({
   ) {
     actions.push({
       // @ts-ignore
-      name: window['__STATE_MACHINE_ACTION_NAME__'] || 'unknown',
+      name: window['__LSM_NAME__'] || 'unknown',
       state: cloneDeep(state),
     });
   }
