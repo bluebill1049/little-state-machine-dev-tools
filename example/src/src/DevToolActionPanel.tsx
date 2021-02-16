@@ -72,7 +72,8 @@ const DevToolActionPanel = ({
         }}
       >
         {actions
-          .filter(({ name }) => name && name.toLowerCase && name.toLowerCase().includes(filterName) ||
+          .filter(
+            ({ name }) => name && name.toLowerCase && name.toLowerCase().includes(filterName) ||
             (!name && !filterName || !filterName)
           )
           .map(({ name }, index) => (

@@ -5,10 +5,10 @@ import { useStateMachine } from 'little-state-machine';
 
 const Form: React.FC = () => {
   const { handleSubmit, register } = useForm();
-  const { state, action } = useStateMachine(updateFirstLastName);
+  const { state, actions } = useStateMachine({ updateFirstLastName });
 
   const onSubmit = (data: any) => {
-    action({
+    actions.updateFirstLastName({
       ...data,
       // @ts-ignore
       submitCounter: state.yourDetails.submitCounter + 1,

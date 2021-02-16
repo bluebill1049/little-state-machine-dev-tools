@@ -9,6 +9,8 @@ import { useRef } from 'react';
 const cloneDeep = require('lodash.clonedeep');
 
 const { useState } = React;
+const panelWidth = 600;
+
 export let actions: { name: string; state: Object }[] = [];
 let previousStateIndex = -1;
 let previousIsLoadPanelShow = false;
@@ -31,8 +33,6 @@ const config =
 let previousMouseMoveDiff = config.mouseMoveDiff;
 let previousIsCollapse = config.isCollapse;
 let previousIsClose = config.isClose;
-
-const panelWidth = 600;
 
 export const DevTool = ({
   buttonBottom,
@@ -69,7 +69,7 @@ export const DevTool = ({
   ) {
     actions.push({
       // @ts-ignore
-      name: window['__STATE_MACHINE_ACTION_NAME__'] || 'unknown',
+      name: window['__LSM_NAME__'] || 'unknown',
       state: cloneDeep(state),
     });
   }
