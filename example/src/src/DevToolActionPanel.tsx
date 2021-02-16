@@ -72,14 +72,8 @@ const DevToolActionPanel = ({
         }}
       >
         {actions
-          .filter(
-            data =>
-              ((data.name &&
-                data.name.toLowerCase &&
-                data.name.toLowerCase().includes(filterName)) ||
-                (!data.name && !filterName) ||
-                filterName === '') &&
-              data.name,
+          .filter(({ name }) => name && name.toLowerCase && name.toLowerCase().includes(filterName) ||
+            (!name && !filterName || !filterName)
           )
           .map(({ name }, index) => (
             <li
@@ -110,7 +104,7 @@ const DevToolActionPanel = ({
                   setStateIndex(index);
                 }}
               >
-                {name || 'unknown'}
+                {name}
               </button>
             </li>
           ))}
