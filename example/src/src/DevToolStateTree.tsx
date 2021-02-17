@@ -149,7 +149,7 @@ export default ({
           style={buttonStyle}
           onClick={() => {
             // @ts-ignore
-            window.STATE_MACHINE_RESET();
+            window.__LSM_RESET__();
           }}
         >
           Reset
