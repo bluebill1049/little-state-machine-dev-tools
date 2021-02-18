@@ -2696,6 +2696,11 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
+little-state-machine@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/little-state-machine/-/little-state-machine-4.0.2.tgz#f1457566a735c03dee47e130848c574a8a239ed3"
+  integrity sha512-KMm04X40xI22dwOS6L6gLW79XwHyPkLQPJryqwCoDqQ+4Lsxfs94vEItUQwzqWZeNHauxU4yRGmwTFW0qYsHYg==
+
 load-json-file@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/load-json-file/-/load-json-file-4.0.0.tgz#2f5f45ab91e33216234fd53adab668eb4ec0993b"
