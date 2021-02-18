@@ -5874,11 +5874,12 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-little-state-machine-devtools@1.0.0-beta.3:
-  version "1.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/little-state-machine-devtools/-/little-state-machine-devtools-1.0.0-beta.3.tgz#b751017e27509c4a1a77b31f704f6c8aef1939f7"
-  integrity sha512-PsDTzORxGLU/0QjdbC35pfClIrLHXBUSx+mk5kq4YX0G0q7oEGfM5YcezrqGhQv9XRRF29aeOfK1xJvPzngYuw==
+little-state-machine-devtools@1.0.0-beta.6:
+  version "1.0.0-beta.6"
+  resolved "https://registry.yarnpkg.com/little-state-machine-devtools/-/little-state-machine-devtools-1.0.0-beta.6.tgz#419782521eb41f85a0821ca757708553697a69d1"
+  integrity sha512-N6PF+OMtNML4a/BURvBbV7nYl65nsGd7IfOdBnZrRs0XUoniuiHSyXRntJjuaKouCDUtpSqMQkQ+qldhczsQxw==
   dependencies:
+    little-state-machine "^3.0.0"
     lodash.clonedeep "^4.5.0"
     lodash.isempty "^4.4.0"
     lodash.isequal "^4.5.0"
@@ -5887,10 +5888,15 @@ little-state-machine-devtools@1.0.0-beta.3:
     react-json-view "^1.19.1"
     react-simple-animate "^3.3.0"
 
-little-state-machine@3.0.0-beta.4:
-  version "3.0.0-beta.4"
-  resolved "https://registry.yarnpkg.com/little-state-machine/-/little-state-machine-3.0.0-beta.4.tgz#354b873a8939c0be1c611a30632767e7e424745a"
-  integrity sha512-N7na+GC2j53tL3GpKvDqdu8VBL0U40Fgk/owsNtZeEWdHkx+NOhvAwOG8c0RQik6jMNWuYZuLYiKYVGNYqwZtA==
+little-state-machine@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/little-state-machine/-/little-state-machine-4.0.0.tgz#884dca86a74d70243ea55da74182a06aeb84c213"
+  integrity sha512-IsG03r81UpHzU/bFZu+F/KX2WTIpvKGyMxo1QBSym0wEsphp3JKJrMqxvIRvwPyscCxzt0nP40VROSby9VQf0w==
+
+little-state-machine@^3.0.0:
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/little-state-machine/-/little-state-machine-3.1.4.tgz#b29c396f732976cc327a612ef9a7a53f3f3520ab"
+  integrity sha512-gYlLCj6oUME0NG34/2O0Ljy52qYYyYDJ5yiAuq2ijbaRlBKIqtQQkKkEYn0KfjYXCE693j+bdY22EyZin25Bhw==
 
 load-json-file@^2.0.0:
   version "2.0.0"
