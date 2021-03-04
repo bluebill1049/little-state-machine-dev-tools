@@ -44,18 +44,19 @@
     "uglify-es": "^3.3.9"
   },
   "peerDependencies": {
-    "little-state-machine": "^4.0.2",
+    "little-state-machine": "^4.0.0",
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   },
   "dependencies": {
-    "little-state-machine": "^4.0.2",
+    "little-state-machine": "^4.0.0",
     "lodash.clonedeep": "^4.5.0",
     "lodash.isempty": "^4.4.0",
     "lodash.isequal": "^4.5.0",
     "lodash.isobject": "^3.0.2",
     "lodash.transform": "^4.6.0",
     "react-json-view": "^1.19.1",
-    "react-simple-animate": "^3.3.0"
+    "react-simple-animate": "^3.3.0",
+    "yarn": "^1.22.10"
   }
 }
