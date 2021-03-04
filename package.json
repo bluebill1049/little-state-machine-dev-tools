@@ -41,15 +41,16 @@
     "rollup-plugin-typescript2": "^0.19.2",
     "ts-jest": "^24.0.0",
     "typescript": "^3.3.3333",
-    "uglify-es": "^3.3.9"
+    "uglify-es": "^3.3.9",
+    "yarn": "^1.22.10"
   },
   "peerDependencies": {
-    "little-state-machine": "^3.0.0",
+    "little-state-machine": "^4.0.0",
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   },
   "dependencies": {
-    "little-state-machine": "^4.0.2",
+    "little-state-machine": "^4.0.0",
     "lodash.clonedeep": "^4.5.0",
     "lodash.isempty": "^4.4.0",
     "lodash.isequal": "^4.5.0",
