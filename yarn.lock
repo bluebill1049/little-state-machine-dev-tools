@@ -2696,10 +2696,10 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-little-state-machine@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/little-state-machine/-/little-state-machine-4.0.2.tgz#f1457566a735c03dee47e130848c574a8a239ed3"
-  integrity sha512-KMm04X40xI22dwOS6L6gLW79XwHyPkLQPJryqwCoDqQ+4Lsxfs94vEItUQwzqWZeNHauxU4yRGmwTFW0qYsHYg==
+little-state-machine@^4.0.0:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/little-state-machine/-/little-state-machine-4.4.1.tgz#210b1f50c8e251356578d7b085f26fafbd83476b"
+  integrity sha512-ZIBJz3dYmLBThE695yScD5biTdoG0qC+roWB6LFztWUhmxta6L9yjWdlBAyX/5cOB/rUPgWLT+5sPK+ZjAfeZw==
 
 load-json-file@^4.0.0:
   version "4.0.0"
@@ -3955,9 +3955,9 @@ shebang-regex@^1.0.0:
   integrity sha1-2kL0l0DAtC2yypcoVxyxkMmO/qM=
 
 shell-quote@^1.6.1:
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
-  integrity sha512-mRz/m/JVscCrkMyPqHc/bczi3OQHkLTqXHEFu0zDhK/qfv3UcOA4SVmRCLmos4bhjr9ekVQubj/R7waKapmiQg==
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.3.tgz#aa40edac170445b9a431e17bb62c0b881b9c4123"
+  integrity sha512-Vpfqwm4EnqGdlsBFNmHhxhElJYrdfcxPThu+ryKS5J8L/fhAwLazFZtq+S+TWZ9ANj2piSQLGj6NQg+lKPmxrw==
 
 shellwords@^0.1.1:
   version "0.1.1"
@@ -4636,3 +4636,8 @@ yargs@^13.3.0:
     which-module "^2.0.0"
     y18n "^4.0.0"
     yargs-parser "^13.1.1"
+
+yarn@^1.22.10:
+  version "1.22.19"
+  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.22.19.tgz#4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
+  integrity sha512-/0V5q0WbslqnwP91tirOvldvYISzaqhClxzyUKXYxs07yUILIs5jx/k6CFe8bvKSkds5w+eiOqta39Wk3WxdcQ==
