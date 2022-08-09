@@ -152,7 +152,6 @@ export const DevTool = ({
               zIndex: Z_INDEX.top,
               position: 'fixed',
               right: 0,
-              width: panelWidth,
               height: '100vh',
               background: COLORS.primary,
               display: 'grid',
