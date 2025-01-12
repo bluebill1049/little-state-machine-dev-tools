@@ -4,11 +4,19 @@ import { COLORS } from './constants';
 import saveSetting from './logic/saveSetting';
 import { useState } from 'react';
 import search from './logic/filterObject';
-const clone = require('lodash.clonedeep');
+import cloneDeep from 'lodash/cloneDeep'
 let ReactJson = (props: any) => <div {...props} />;
 if (typeof window !== 'undefined' && typeof document !== 'undefined') {
-  ReactJson = require('react-json-view').default;
+  import("react-json-view")
+      .then((module) => {
+        // @ts-expect-error type unmatch
+        ReactJson = module.default
+      })
+      .catch((_err) => {
+        console.log('Could not import react-json-view')
+      });
 }
+
 
 const buttonStyle = {
   margin: '0 10px 0 0',
@@ -79,7 +87,7 @@ export default ({
     {}
   ).state;
 
-  if (filterValue) data = search(clone(data), filterValue);
+  if (filterValue) data = search(cloneDeep(data), filterValue);
 
   return (
     <section>

@@ -6,7 +6,7 @@ import { Animate } from 'react-simple-animate';
 import { STATE_MACHINE_DEV_TOOL_CONFIG, COLORS, Z_INDEX } from './constants';
 import saveSetting from './logic/saveSetting';
 import { useRef } from 'react';
-const cloneDeep = require('lodash.clonedeep');
+import cloneDeep from 'lodash/cloneDeep'
 
 const { useState } = React;
 const panelWidth = 600;
@@ -152,7 +152,6 @@ export const DevTool = ({
               zIndex: Z_INDEX.top,
               position: 'fixed',
               right: 0,
-              height: '100vh',
               background: COLORS.primary,
               display: 'grid',
               gridTemplateColumns: '3px 150px minmax(100px, 1fr)',
@@ -164,6 +163,7 @@ export const DevTool = ({
                     height: '40%',
                   }
                 : {
+                    height: '100vh',
                     top: 0,
                     width: panelWidth - (mouseMoveDiff || 0),
                   }),

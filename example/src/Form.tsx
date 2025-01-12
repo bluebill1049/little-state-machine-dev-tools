@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { updateFirstLastName } from './actions/yourDetails';
-import useForm from 'react-hook-form';
+import {useForm} from 'react-hook-form';
 import { useStateMachine } from 'little-state-machine';
 
 const Form: React.FC = () => {
   const { handleSubmit, register } = useForm();
-  const { state, actions } = useStateMachine({ updateFirstLastName });
+  const { state, actions } = useStateMachine({ actions: {updateFirstLastName} });
 
   const onSubmit = (data: any) => {
     actions.updateFirstLastName({
@@ -20,17 +20,15 @@ const Form: React.FC = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <label>First name:</label>
         <input
-          name="firstname"
           placeholder="First name"
-          ref={register}
+          {...register('firstname')}
           // @ts-ignore
           defaultValue={state && state.yourDetails.firstname}
         />
         <label>Last name:</label>
         <input
-          name="lastname"
           placeholder="Last name"
-          ref={register}
+          {...register('lastname')}
           // @ts-ignore
           defaultValue={state && state.yourDetails.lastname}
         />

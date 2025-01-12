@@ -22,9 +22,7 @@ Check out the <a href="https://codesandbox.io/s/lrz5wloklm">Demo</a>.
 ```jsx
 import { DevTool } from 'little-state-machine-devtools'
 
-<StateMachineProvider>
- {process.env.NODE_ENV !== 'production' && <DevTool />}
-</StateMachineProvider>
+{process.env.NODE_ENV !== 'production' && <DevTool />}
 ```
 <div align="center">
   <a href="https://lrz5wloklm.csb.app/">
@@ -39,7 +37,7 @@ import { DevTool } from 'little-state-machine-devtools'
 import React from 'react'
 import yourDetail from './yourDetail'
 import YourComponent from './yourComponent'
-import { StateMachineProvider, createStore } from 'little-state-machine'
+import { createStore } from 'little-state-machine'
 import { DevTool } from 'little-state-machine-devtools'
 
 // The following code is for React Native usage
@@ -53,10 +51,10 @@ createStore({
 
 export default () => {
   return (
-    <StateMachineProvider>
+    <>
       {process.env.NODE_ENV !== 'production' && <DevTool />}
       <YourComponent />
-    </StateMachineProvider>
+    </>
   )
 }
 ```
@@ -71,7 +69,7 @@ export default function YourComponent() {
   const {
     action,
     state: { yourDetail: { name } },
-  } = useStateMachine(updateName);
+  } = useStateMachine({ actions: {updateName} });
 
   return <div onClick={() => action({ name: 'bill' })}>{name}</div>
 }
