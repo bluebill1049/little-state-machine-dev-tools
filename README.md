@@ -22,9 +22,7 @@ Check out the <a href="https://codesandbox.io/s/lrz5wloklm">Demo</a>.
 ```jsx
 import { DevTool } from 'little-state-machine-devtools'
 
-<>
- {process.env.NODE_ENV !== 'production' && <DevTool />}
-</>
+{process.env.NODE_ENV !== 'production' && <DevTool />}
 ```
 <div align="center">
   <a href="https://lrz5wloklm.csb.app/">
