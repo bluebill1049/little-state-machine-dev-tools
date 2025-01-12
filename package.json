@@ -1,7 +1,7 @@
 {
   "name": "little-state-machine-devtools",
   "sideEffects": false,
-  "version": "2.0.1",
+  "version": "3.0.0",
   "types": "dist/index.d.ts",
   "main": "index.js",
   "scripts": {
